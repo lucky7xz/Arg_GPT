@@ -32,4 +32,12 @@ class PipelineWrapper:
 
 
 
+
+    def log_processed_file(self, file_path: str) -> None:
+        # Log successful processing
+        print(f"Processed {file_path}")
+    
+
+
+
         return results
