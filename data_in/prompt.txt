@@ -1,0 +1,37 @@
+Extract the Argument Graph Units (AGUs) from this podcast text.
+
+- An AGU is defined as : Argument Unit (AU) and unique handles.
+- An AU is defined as : an AU can be a Main claim, premise (support for main claim), counterargument (attack on main claim), and rebuttal (challenging premise or counterargument). The AU is synthesized from the input text
+- A handle is defined as : string quote from the input text, which can be used to find and verify the text from which the AU was synthesized.
+
+Building the Argument graph:
+
+- The argument graph has only one Main claim
+- Each AU is unique to it’s category, and does not repeat
+- Try extracting AGUs even if the conversation is informal
+- the Argument graph will be structured as follows:
+
+START
+Main claim AGU
+
+- text (handle: "...)
+
+Premise AGUs
+
+- text (handle: "...)
+- ...
+
+Counterargument AGUs
+
+- text (handle: "...)
+- ...
+Rebuttal AGUs
+- text (handle: "...)
+- ...
+END
+
+podcast text:
+
+<podcast_text>
+
+ARGUMENT GRAPH:
